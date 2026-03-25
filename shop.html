@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Collection | LUXE SOFA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar" class="scrolled">
+        <div class="logo">LUXE SOFA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="login.html"><i class="far fa-user"></i></a>
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="section-padding">
+        <div class="shop-container" style="display: flex; gap: 40px; margin-top: 40px;">
+            <!-- Sidebar -->
+            <aside class="shop-sidebar" style="flex: 1; max-width: 250px;">
+                <div class="filter-section" style="margin-bottom: 30px;">
+                    <h4 style="margin-bottom: 15px;">Search</h4>
+                    <input type="text" id="product-search" placeholder="Search sofas..." style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+
+                <div class="filter-section" style="margin-bottom: 30px;">
+                    <h4 style="margin-bottom: 15px;">Categories</h4>
+                    <ul id="category-filters">
+                        <li style="margin-bottom: 8px;"><a href="#" class="cat-filter active" data-category="all">All Collection</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#" class="cat-filter" data-category="L-Shaped Sofas">L-Shaped Sofas</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#" class="cat-filter" data-category="Leather Sofas">Leather Sofas</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#" class="cat-filter" data-category="Sectional Sofas">Sectional Sofas</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#" class="cat-filter" data-category="Luxury Designer Sofas">Luxury Designer</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#" class="cat-filter" data-category="Fabric Sofas">Fabric Sofas</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#" class="cat-filter" data-category="Recliner Sofas">Recliner Sofas</a></li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h4 style="margin-bottom: 15px;">Sort By</h4>
+                    <select id="price-sort" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option value="default">Default</option>
+                        <option value="low">Price: Low to High</option>
+                        <option value="high">Price: High to Low</option>
+                        <option value="rating">Top Rated</option>
+                    </select>
+                </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <main style="flex: 3;">
+                <div id="product-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px;">
+                    <!-- Dynamically Loaded -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo" style="color: white; margin-bottom: 20px;">LUXE SOFA</div>
+                <p>Bringing elegance and comfort to your living space since 1995.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Luxe Sofa Portal.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

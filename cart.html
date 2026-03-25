@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart | LUXE SOFA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar" class="scrolled">
+        <div class="logo">LUXE SOFA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="login.html"><i class="far fa-user"></i></a>
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="section-padding">
+        <h2 style="margin-bottom: 40px; font-size: 36px;">Shopping Cart</h2>
+        
+        <div class="cart-container" style="display: flex; gap: 40px; flex-wrap: wrap;">
+            <div class="cart-items-list" id="cart-items" style="flex: 2; min-width: 300px;">
+                <!-- Dynamically Loaded -->
+            </div>
+
+            <div class="cart-summary glass-card" style="flex: 1; min-width: 300px; padding: 30px; height: fit-content;">
+                <h3 style="margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">Order Summary</h3>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">$0</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                    <span>Shipping</span>
+                    <span>FREE</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 30px; font-weight: 700; font-size: 20px;">
+                    <span>Total</span>
+                    <span id="cart-total">$0</span>
+                </div>
+                <button class="btn btn-primary" style="width: 100%;" onclick="checkout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
